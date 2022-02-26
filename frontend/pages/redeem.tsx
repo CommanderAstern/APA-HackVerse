@@ -6,11 +6,8 @@ const Home: NextPage = () => {
 		<>
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
-				<script src="https://cdn.tailwindcss.com"></script>
 			</Head>
 			<body>
-				<header className="text-3xl">DApp</header>
-
 				
 			</body>
 		</>

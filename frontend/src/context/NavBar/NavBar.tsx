@@ -20,10 +20,16 @@ export const NavBar = () => {
 						<li className={path === "/" ? "active-nav" : "nav-item"}>
 							<Link href="/">Home</Link>
 						</li>
+						<li className={path === "/marketplace" ? "active-nav" : "nav-item"}>
+							<Link href="/marketplace">Marketplace</Link>
+						</li>
+						<li className={path === "/redeem" ? "active-nav" : "nav-item"}>
+							<Link href="/redeem">Redeem</Link>
+						</li>
 					</ul>
 				</nav>
 				<div className="flex items-center">
-					<MetaMask />
+					{/* <MetaMask /> */}
 					<div className="ml-5">
 						<DarkModeToggle />
 					</div>

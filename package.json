@@ -16,7 +16,7 @@
 	},
 	"homepage": "https://github.com/adriandelgg/create-ether-dapp#readme",
 	"scripts": {
-		"dev": "concurrently \"[ -d hardhat ] && cd ./hardhat && npx hardhat node && cd ..\" \"[ -d frontend ] && cd ./frontend && yarn dev && cd ..\" \"[ -d backend ] && cd ./backend && echo 'Please enable MongoDB server (mongod)' && yarn dev\"",
+		"dev": "concurrently \"[ -d hardhat ] && cd ./hardhat && export SET NODE_OPTIONS=--openssl-legacy-provider && npx hardhat node && cd ..\" \"[ -d frontend ] && cd ./frontend && yarn dev && cd ..\" \"[ -d backend ] && cd ./backend && echo 'Please enable MongoDB server (mongod)' && yarn dev\"",
 		"hardhat": "cd ./hardhat && npx hardhat node",
 		"frontend": "cd ./frontend && yarn dev",
 		"backend": "cd ./backend && yarn dev",
