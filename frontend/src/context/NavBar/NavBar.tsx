@@ -27,7 +27,6 @@ export const NavBar = () => {
 							<Link href="/redeem">Redeem</Link>
 						</li>
 					</ul>
-					
 				</nav>
 				<div className="flex items-center">
 					{/* <MetaMask /> */}

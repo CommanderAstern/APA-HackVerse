@@ -72,13 +72,13 @@ footer {
 }
 
 .nav-item {
-	@apply text-green-500 hover:text-green-800 px-2 list-none
-	font-medium text-lg dark:text-green-600 dark:hover:text-yellow-400;
+	@apply text-gray-600 hover:text-gray-900 px-2 list-none
+	font-medium text-lg dark:text-gray-600 dark:hover:text-yellow-400;
 }
 
 .active-nav {
-	@apply border-b-2 border-green-300 text-green-500 list-none
-	hover:text-green-800 hover:border-green-800 px-2
+	@apply border-b-2 border-gray-900 text-gray-900 list-none
+	hover:text-gray-900 hover:border-gray-900 px-2
 	font-medium text-lg dark:text-yellow-400 dark:hover:text-yellow-500
 	dark:border-yellow-400 dark:hover:border-yellow-500;
 }
