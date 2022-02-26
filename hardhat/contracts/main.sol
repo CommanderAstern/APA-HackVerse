@@ -2,9 +2,9 @@ pragma solidity ^0.8.5;
 
 contract HelloWorld {
     string public greet = "Hello World!";
-    // function that return 123123
-    function getNumber() public view returns (uint) {
-        return 123123;
+    uint count = 100;
+    //return count
+    function getCount1() public view returns (uint) {
+        return count;
     }
-
 }

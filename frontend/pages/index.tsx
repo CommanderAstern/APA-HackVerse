@@ -25,9 +25,10 @@ const Home: NextPage = () => {
     loadNFTs();
   }, []);
 	  async function loadNFTs() {
+	console.log(address)
     const provider = new ethers.providers.JsonRpcProvider(rpcEndpoint);
     const tokenContract = new ethers.Contract(address, test.abi, provider);
-    const data = await tokenContract.getNumber();
+    const data = await tokenContract.greet;
 	console.log(meta.data);
   }
 	return (
