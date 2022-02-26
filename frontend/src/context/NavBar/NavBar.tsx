@@ -20,6 +20,12 @@ export const NavBar = () => {
 						<li className={path === "/" ? "active-nav" : "nav-item"}>
 							<Link href="/">Home</Link>
 						</li>
+						<li className={path === "/cool" ? "active-nav" : "nav-item"}>
+							<Link href="/cool">Cool</Link>
+						</li>
+						<li className={path === "/marketplace" ? "active-nav" : "nav-item"}>
+							<Link href="/marketplace">Marketplace</Link>
+						</li>
 					</ul>
 				</nav>
 				<div className="flex items-center">

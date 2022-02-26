@@ -7,7 +7,7 @@ const Home: NextPage = () => {
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<h1 className="text-center text-2xl">Good luck building those Dapps! BEooo</h1>
+			<h1 className="text-center text-2xl">Good luck building those Dapps! Bro    </h1>
 		</>
 	);
 };
