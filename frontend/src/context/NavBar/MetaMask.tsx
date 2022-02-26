@@ -45,7 +45,7 @@ export const MetaMask = () => {
 						break;
 					default:
 						// Hardhat Local
-						contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+						contractAddress = "";
 				}
 
 				const signer = provider.getSigner(address);

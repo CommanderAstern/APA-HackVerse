@@ -29,7 +29,7 @@ export const NavBar = () => {
 					</ul>
 				</nav>
 				<div className="flex items-center">
-					{/* <MetaMask /> */}
+					<MetaMask />
 					<div className="ml-5">
 						<DarkModeToggle />
 					</div>

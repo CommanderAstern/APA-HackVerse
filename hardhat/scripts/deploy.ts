@@ -8,15 +8,15 @@ const fs = require('fs');
 
 async function main() {
 	// We get the contract to deploy
-	const TodoList = await hre.ethers.getContractFactory("HelloWorld");
-	const todoList = await TodoList.deploy();
+	const LTYToken = await hre.ethers.getContractFactory("LTYToken");
+	const ltyToken = await LTYToken.deploy();
 
-	await todoList.deployed();
+	await ltyToken.deployed();
 
-	console.log("TodoList deployed to:", todoList.address);
+	console.log("LTYToken deployed to:", ltyToken.address);
 
 	  let config = `
-  export const address = "${todoList.address}"
+  export const address = "${ltyToken.address}"
   `
     let data = JSON.stringify(config)
   fs.writeFileSync('config.js', JSON.parse(data))
