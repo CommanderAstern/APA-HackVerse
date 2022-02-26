@@ -8,11 +8,9 @@ import Layout from "src/context/Layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<Web3Provider>
 			<Layout>
 				<Component {...pageProps} />
 			</Layout>
-		</Web3Provider>
 	);
 }
 

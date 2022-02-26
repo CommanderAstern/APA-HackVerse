@@ -1,7 +1,36 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
+import type { NextPage } from "next";
+import Head from "next/head";
 
+import { ethers } from "ethers";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Web3Modal from "web3modal";
+
+import { address } from "../../hardhat/config";
+
+import test from "../../hardhat/artifacts/contracts/main.sol/LTYToken.json";
+
+let rpcEndpoint = null;
+if (process.env.NEXT_PUBLIC_WORKSPACE_URL) {
+  rpcEndpoint = process.env.NEXT_PUBLIC_WORKSPACE_URL;
+}
 const Home: NextPage = () => {
+	useEffect(() => {}, []);
+	  async function buyItem(price1) {
+    const web3Modal = new Web3Modal();
+    const connection = await web3Modal.connect();
+    const provider = new ethers.providers.Web3Provider(connection);
+    const signer = provider.getSigner();
+
+    const price = ethers.utils.parseUnits(price1.toString(), "ether");
+    const tokenContract = new ethers.Contract(address, test.abi, signer);
+    const transaction = await tokenContract.buying({
+      value: price,
+    });
+
+    await transaction.wait();
+    console.log(signer._address);
+  }
 	return (
 		<>
 			<Head>
@@ -22,7 +51,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className="px-6 pt-2 pb-2">
 							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹700</span>
-							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl">Buy</button>
+							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(700)}>Buy</button>
 						</div>
 					</div>
 
@@ -36,7 +65,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className="px-6 pt-2.5 pb-2">
 							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹500</span>
-							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl">Buy</button>
+							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(500)}>Buy</button>
 						</div>
 					</div>
 
@@ -50,7 +79,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className="px-6 pt-1 pb-2">
 							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹1400</span>
-							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl">Buy</button>
+							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(1400)}>Buy</button>
 						</div>
 					</div>
 				</div>
@@ -67,7 +96,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className="px-6 pt-2 pb-2">
 							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹300</span>
-							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl">Buy</button>
+							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(300)}>Buy</button>
 						</div>
 					</div>
 
@@ -81,7 +110,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className="px-6 pt-2 pb-2">
 							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹2000</span>
-							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl">Buy</button>
+							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(2000)}>Buy</button>
 						</div>
 					</div>
 
@@ -95,7 +124,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className="px-6 pt-1.5 pb-2">
 							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹800</span>
-							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl">Buy</button>
+							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(800)}>Buy</button>
 						</div>
 					</div>
 				</div>

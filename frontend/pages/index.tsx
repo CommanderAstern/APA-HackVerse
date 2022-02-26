@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Web3Modal from "web3modal";
 
-
 import { address } from "../../hardhat/config";
 
 import test from "../../hardhat/artifacts/contracts/main.sol/LTYToken.json";
@@ -17,29 +16,24 @@ if (process.env.NEXT_PUBLIC_WORKSPACE_URL) {
 }
 
 const Home: NextPage = () => {
-  useEffect(() => {
-    
-  }, []);
+  useEffect(() => {}, []);
 
-	async function loadNFTs() {
-		const web3Modal = new Web3Modal();
-		const connection = await web3Modal.connect();
-		const provider = new ethers.providers.JsonRpcProvider(rpcEndpoint);
-		const signer = provider.getSigner();
+  async function buyItem() {
+    const web3Modal = new Web3Modal();
+    const connection = await web3Modal.connect();
+    const provider = new ethers.providers.Web3Provider(connection);
+    const signer = provider.getSigner();
 
-		console.log(address);
-		let price1 = 10;
-		const price = ethers.utils.parseUnits('10'.toString(), "ether");
-		const tokenContract = new ethers.Contract(address, test.abi, signer);
-    const transaction = await tokenContract.buying(
-      {
-        value: price,
-      }
-    );
+    let price1 = 10;
+    const price = ethers.utils.parseUnits("10".toString(), "ether");
+    const tokenContract = new ethers.Contract(address, test.abi, signer);
+    const transaction = await tokenContract.buying({
+      value: price,
+    });
 
-		await transaction.wait();
-	  console.log(signer._address);
-	}
+    await transaction.wait();
+    console.log(signer._address);
+  }
   return (
     <>
       <Head>
@@ -53,12 +47,12 @@ const Home: NextPage = () => {
           alt="cryptocurrency"
         />
 
-		                <button
-                  className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded"
-                  onClick={() => loadNFTs()}
-                >
-                  Buy
-                </button>
+        {/* <button
+          className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded"
+          onClick={() => buyItem()}
+        >
+          Buy
+        </button> */}
       </body>
     </>
   );
