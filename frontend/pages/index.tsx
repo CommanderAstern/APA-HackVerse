@@ -35,8 +35,13 @@ const Home: NextPage = () => {
 		<>
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
+				<script src="https://cdn.tailwindcss.com"></script>
 			</Head>
-			<h1 className="text-center text-2xl">Good luck building those Dapps!</h1>
+			<body>
+				<header className="text-3xl">DApp</header>
+
+				
+			</body>
 		</>
 	);
 };

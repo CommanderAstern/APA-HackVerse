@@ -16,9 +16,11 @@
 	},
 	"homepage": "https://github.com/adriandelgg/create-ether-dapp#readme",
 	"scripts": {
+
 		"dev": "concurrently \"[ -d hardhat ] && cd ./hardhat &&  npx hardhat node && cd ..\" \"[ -d frontend ] && cd ./frontend && yarn dev && cd ..\" \"[ -d backend ]",
 		"deploy": "cd ./hardhat && npx hardhat run scripts/deploy.ts  --network localhost",
 		"hardhat": "cd ./hardhat && npx hardhat node ",
+
 		"frontend": "cd ./frontend && yarn dev",
 		"backend": "cd ./backend && yarn dev",
 		"installdeps": "concurrently \"[ -d backend ] && cd backend && yarn install\" \"[ -d frontend ] && cd frontend && yarn install\" \"[ -d hardhat ] && cd hardhat && yarn install\"",
