@@ -13,7 +13,7 @@ export const NavBar = () => {
 			<ToastContainer />
 			<header
 				className="flex justify-around items-center py-3
-				border-b-2 border-gray-100 dark:border-gray-700"
+				border-b-2 border-gray-100 dark:border-gray-700 bg-gradient-to-r from-cyan-200 via-stone-300 to-orange-400" id="myDIV"
 			>
 				<nav>
 					<ul className="flex justify-around text-center">
