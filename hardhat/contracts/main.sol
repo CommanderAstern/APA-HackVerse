@@ -5,6 +5,6 @@ contract HelloWorld {
     uint count = 100;
     //return count
     function getCount1() public view returns (uint) {
-        return count;
+        return 0;
     }
 }

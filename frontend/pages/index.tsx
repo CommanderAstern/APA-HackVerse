@@ -12,7 +12,7 @@ import {
 
 import test from '../../hardhat/artifacts/contracts/main.sol/HelloWorld.json'
 
-let rpcEndpoint = ""
+let rpcEndpoint = null;
 if (process.env.NEXT_PUBLIC_WORKSPACE_URL) {
   rpcEndpoint = process.env.NEXT_PUBLIC_WORKSPACE_URL
 }
@@ -25,11 +25,11 @@ const Home: NextPage = () => {
     loadNFTs();
   }, []);
 	  async function loadNFTs() {
-	console.log(address)
     const provider = new ethers.providers.JsonRpcProvider(rpcEndpoint);
     const tokenContract = new ethers.Contract(address, test.abi, provider);
-    const data = await tokenContract.greet;
-	console.log(meta.data);
+    const data = await tokenContract.greet();
+
+	console.log(data);
   }
 	return (
 		<>
