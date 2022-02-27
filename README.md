@@ -160,4 +160,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [stars-url]: https://github.com/CommanderAstern/APA-HackVerse/stargazers
 [issues-shield]: https://img.shields.io/github/issues/CommanderAstern/APA-HackVerse.svg?style=for-the-badge
 [issues-url]: https://github.com/CommanderAstern/APA-HackVerse/issues
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: screenshot.png
