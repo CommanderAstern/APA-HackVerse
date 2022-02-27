@@ -105,7 +105,10 @@ So first of all we need yearn for that execute command
 ```
 yearn install
 ```
-
+The version of node required
+```
+>= 16.0.0 && <= 17.0.0
+```
 ### Installation
 
 `For Windows:`
