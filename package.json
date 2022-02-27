@@ -26,6 +26,7 @@
 	},
 	"devDependencies": {
 		"concurrently": "^6.2.1",
+		"hardhat": "^2.8.4",
 		"husky": "^7.0.4"
 	},
 	"keywords": [
@@ -37,7 +38,6 @@
 		"hardhat"
 	],
 	"dependencies": {
-		"hardhat": "^2.8.4",
 		"web3modal": "^1.9.5"
 	}
 }
