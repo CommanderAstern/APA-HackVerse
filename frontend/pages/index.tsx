@@ -18,21 +18,30 @@ if (process.env.NEXT_PUBLIC_WORKSPACE_URL) {
 const Home: NextPage = () => {
   useEffect(() => {}, []);
 
-  async function buyItem() {
-    const web3Modal = new Web3Modal();
-    const connection = await web3Modal.connect();
-    const provider = new ethers.providers.Web3Provider(connection);
-    const signer = provider.getSigner();
+  async function addToken() {
+    console.log("Hi");
+      try {
+        // wasAdded is a boolean. Like any RPC method, an error may be thrown.
+        const wasAdded = await ethereum.request({
+          method: 'wallet_watchAsset',
+          params: {
+            type: 'ERC20', // Initially only supports ERC20, but eventually more!
+            options: {
+              address: address, // The address that the token is at.
+              symbol: 'LYT', // A ticker symbol or shorthand, up to 5 chars.
+              decimals: 18, // The number of decimals in the token
+            },
+          },
+        });
 
-    let price1 = 10;
-    const price = ethers.utils.parseUnits("10".toString(), "ether");
-    const tokenContract = new ethers.Contract(address, test.abi, signer);
-    const transaction = await tokenContract.buying({
-      value: price,
-    });
-
-    await transaction.wait();
-    console.log(signer._address);
+        if (wasAdded) {
+          console.log('Thanks for your interest!');
+        } else {
+          console.log('Your loss!');
+        }
+      } catch (error) {
+        console.log(error);
+      }
   }
   return (
     <>
@@ -47,12 +56,12 @@ const Home: NextPage = () => {
           alt="cryptocurrency"
         />
 
-        {/* <button
+        <button
           className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded"
-          onClick={() => buyItem()}
+          onClick={() => addToken()}
         >
-          Buy
-        </button> */}
+          Add Token
+        </button>
       </body>
     </>
   );
