@@ -103,7 +103,6 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-`For Windows:`
 
 After cloning the repository, you can start the project by running `Git Bash`.
 
