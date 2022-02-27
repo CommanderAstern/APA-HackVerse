@@ -50,7 +50,7 @@ const Home: NextPage = () => {
 							</p>
 						</div>
 						<div className="px-6 pt-2 pb-2">
-							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹700</span>
+							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">Ξ 700</span>
 							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(700)}>Buy</button>
 						</div>
 					</div>
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
 							</p>
 						</div>
 						<div className="px-6 pt-2.5 pb-2">
-							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹500</span>
+							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">Ξ 500</span>
 							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(500)}>Buy</button>
 						</div>
 					</div>
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
 							</p>
 						</div>
 						<div className="px-6 pt-1 pb-2">
-							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹1400</span>
+							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">Ξ 1400</span>
 							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(1400)}>Buy</button>
 						</div>
 					</div>
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
 							</p>
 						</div>
 						<div className="px-6 pt-2 pb-2">
-							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹300</span>
+							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">Ξ 300</span>
 							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(300)}>Buy</button>
 						</div>
 					</div>
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
 							</p>
 						</div>
 						<div className="px-6 pt-2 pb-2">
-							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹2000</span>
+							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">Ξ 2000</span>
 							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(2000)}>Buy</button>
 						</div>
 					</div>
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
 							</p>
 						</div>
 						<div className="px-6 pt-1.5 pb-2">
-							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">₹800</span>
+							<span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">Ξ 800</span>
 							<button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(800)}>Buy</button>
 						</div>
 					</div>

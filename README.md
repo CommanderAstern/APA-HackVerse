@@ -1,5 +1,8 @@
 # APA - HackVerse 3.0 NITK
 
+## About the Project
+
+
 
 ## Technologies Used
 

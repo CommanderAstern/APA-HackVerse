@@ -12,7 +12,7 @@ import test from "../../hardhat/artifacts/contracts/main.sol/LTYToken.json";
 
 
 const Home: NextPage = () => {
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
   async function buyItem(price1) {
     const web3Modal = new Web3Modal();
     const connection = await web3Modal.connect();
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
             </div>
             <div className="px-6 pt-2 pb-2">
               <span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">
-                0.1
+                ♠ 0.1
               </span>
               <button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(0.1)}>
                 Buy
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
             </div>
             <div className="px-6 pt-2 pb-2">
               <span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">
-                0.2
+                ♠ 0.2
               </span>
               <button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(0.2)}>
                 Buy
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
             </div>
             <div className="px-6 pt-2.5 pb-2">
               <span className="italic inline-block px-3 py-1 font-semibold text-gray-700 mb-1 text-xl">
-                0.3
+                ♠ 0.3
               </span>
               <button className="inline-block bg-gray-200 rounded-full px-5 py-1 italic font-semibold text-gray-700 mr-2 mb-2 text-2xl" onClick={() => buyItem(0.3)}>
                 Buy

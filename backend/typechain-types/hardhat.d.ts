@@ -13,24 +13,42 @@ import * as Contracts from ".";
 declare module "hardhat/types/runtime" {
   interface HardhatEthersHelpers extends HardhatEthersHelpersBase {
     getContractFactory(
-      name: "HelloWorld",
+      name: "ERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.HelloWorld__factory>;
+    ): Promise<Contracts.ERC20__factory>;
     getContractFactory(
-      name: "TodoList",
+      name: "IERC20Metadata",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.TodoList__factory>;
+    ): Promise<Contracts.IERC20Metadata__factory>;
+    getContractFactory(
+      name: "IERC20",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IERC20__factory>;
+    getContractFactory(
+      name: "LTYToken",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.LTYToken__factory>;
 
     getContractAt(
-      name: "HelloWorld",
+      name: "ERC20",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.HelloWorld>;
+    ): Promise<Contracts.ERC20>;
     getContractAt(
-      name: "TodoList",
+      name: "IERC20Metadata",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.TodoList>;
+    ): Promise<Contracts.IERC20Metadata>;
+    getContractAt(
+      name: "IERC20",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IERC20>;
+    getContractAt(
+      name: "LTYToken",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.LTYToken>;
 
     // default types
     getContractFactory(
