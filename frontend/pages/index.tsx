@@ -57,7 +57,7 @@ const Home: NextPage = () => {
         />
 
         <button
-          className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded"
+          className="w-full bg-pink-500 text-white text-2xl font-bold py-2 px-12 rounded h-24"
           onClick={() => addToken()}
         >
           Add Token

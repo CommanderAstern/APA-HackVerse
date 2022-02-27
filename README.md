@@ -24,7 +24,7 @@
     <img src="https://cryptologos.cc/logos/polygon-matic-logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">APA - HackVerse 3.0 NITK</h3>
+  <h3 align="center">Loyalty Program</h3>
 
   <p align="center">
     A hackathon project made for Hackverse 3.0
@@ -166,4 +166,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [stars-url]: https://github.com/CommanderAstern/APA-HackVerse/stargazers
 [issues-shield]: https://img.shields.io/github/issues/CommanderAstern/APA-HackVerse.svg?style=for-the-badge
 [issues-url]: https://github.com/CommanderAstern/APA-HackVerse/issues
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: screenshot.png
