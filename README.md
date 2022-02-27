@@ -140,8 +140,10 @@ After the website is loaded, go to the homepage and add the loyalty points token
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Implement IPFS
+- [ ] Use IPFS, for making system more decentralised and efficient
 - [ ] Improve Asthetics
+- [ ] Make an API of our website so could be businesses easily
+- [ ] Adding more schemes and different loyalty programs to fit need of every business.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
