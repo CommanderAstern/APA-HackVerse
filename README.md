@@ -75,8 +75,9 @@ We will also be making a website for demonstration purposes. Loyalty points can 
 The loyalty rewards being on the blockchain can reduce the chances of customers exploiting the system, such as finding an infinite money glitch.
 As the transactions are easily visible on the blockchain, we can also add bug bounties which will further enforce security.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Contract is deployed on the Mumbai Testnet also [0xE851C8E489eb0ee57A1ba1A219f50Fdee6fed5be](https://mumbai.polygonscan.com/address/0xE851C8E489eb0ee57A1ba1A219f50Fdee6fed5be)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ### TechStack
@@ -96,24 +97,45 @@ Hardhat, Ethers.js, TypeChain, OpenZeppelin, Mocha, Chai, Waffle.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
+* [Node.js](https://nodejs.org/)
+* [MetaMask](https://metamask.io/)
+* Yarn
+  ```
+  npm install --global yarn
   ```
 ### Libraries and Dependencies
-So first of all we need yearn for that execute command
+So first of all we use yarn for all the version dependencies 
 ```
-yearn install
+yarn install
 ```
 The version of node required
 ```
 >= 16.0.0 && <= 17.0.0
 ```
+
+List of all dependencies
+```
+ethers
+ethereum
+react
+web3
+typescript
+hardhat
+mocha
+ethereum-waffle
+chai
+solc
+axios
+next
+doenv
+ipfs-http-client
+```
+
 ### Installation
 
-`For Windows:`
+`For Windows: you can start the project by running Git Bash.`
 
-After cloning the repository, you can start the project by running `Git Bash`.
+After cloning the repository, 
 
 
 
