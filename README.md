@@ -100,9 +100,15 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   npm install npm@latest -g
   ```
+### Libraries and Dependencies
+So first of all we need yearn for that execute command
+```
+yearn install
+```
 
 ### Installation
 
+`For Windows:`
 
 After cloning the repository, you can start the project by running `Git Bash`.
 
