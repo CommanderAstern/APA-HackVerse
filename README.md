@@ -133,7 +133,7 @@ ipfs-http-client
 
 ### Installation
 
-`For Windows: you can start the project by running Git Bash.`
+`For Windows: you MUST start the project by running Git Bash.`
 
 After cloning the repository, 
 
