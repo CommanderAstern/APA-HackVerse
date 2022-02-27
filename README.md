@@ -1,23 +1,107 @@
-# APA - HackVerse 3.0 NITK
+<div id="top"></div>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-## About the Project
+
+
+<!-- PROJECT SHIELDS -->
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/CommanderAstern/APA-HackVerse/">
+    <img src="https://cryptologos.cc/logos/polygon-matic-logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">APA - HackVerse 3.0 NITK</h3>
+
+  <p align="center">
+    A hackathon project made for Hackverse 3.0
+    <br />
+    <a href="https://github.com/CommanderAstern/APA-HackVerse/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/CommanderAstern/APA-HackVerse/issues">Request Feature</a>
+  </p>
+</div>
 
 
 
-## Technologies Used
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Tech Stack</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+Create a DApp that helps businesses deploy a marketplace specifically for loyalty rewards. When a customer buys a product from a shop, they are rewarded with a certain amount of loyalty points which they can redeem in the loyalty shop to purchase specific things from the loyalty shop. 
+
+We will make this like an API of sorts where it is effortless to integrate it to their existing website/platform.
+
+We will also be making a website for demonstration purposes. Loyalty points can also be implemented as an ERC-20 token.
+
+The loyalty rewards being on the blockchain can reduce the chances of customers exploiting the system, such as finding an infinite money glitch.
+As the transactions are easily visible on the blockchain, we can also add bug bounties which will further enforce security.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+### TechStack
 
 🎨 __Front-end:__
 MetaMask, Ethers.js, Next.js (React), HTML5, Tailwind CSS.
 
 👷‍♂️ __Smart Contracts:__
 Hardhat, Ethers.js, TypeChain, OpenZeppelin, Mocha, Chai, Waffle.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-🗃️ __Back-end:__
-Node.js, Express, Ethers.js, Joi.
 
-## How to Deploy
 
-`Ensure that all the dependcies are installed.`
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
 
 `For Windows:`
 
@@ -45,44 +129,36 @@ After the website is loaded, go to the homepage and add the loyalty points token
 
 
 
+<!-- ROADMAP -->
+## Roadmap
+
+- [ ] Implement IPFS
+- [ ] Improve Asthetics
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
 
-```
-yarn install
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-go to hardhat project directory and run the following command:
-npx hardhat node
-
-in the main directory of the project, run the following command:
-yarn deploy
-
-then yarn frontend
-```
-
-After executing the above commands, to deploy the model, you need to run the following command in the root directory of the project:
-```
-yarn dev
-```
-
-And then in another terminal in the same root directory, you must run the following command:
-```
-yarn deploy
-```
-
-## Libraries and Dependencies:
-
-```
-Chrome based browsers.
-```
-
-```
-Metamask extension must be enabled and run on local host after deployment with any of the dummy accounts. 
-```
-
-```
-Node.js 16.0 < version < 17
-```
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/CommanderAstern/APA-HackVerse.svg?style=for-the-badge
+[contributors-url]: https://github.com/CommanderAstern/APA-HackVerse/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/CommanderAstern/APA-HackVerse.svg?style=for-the-badge
+[forks-url]: https://github.com/CommanderAstern/APA-HackVerse/network/members
+[stars-shield]: https://img.shields.io/github/stars/CommanderAstern/APA-HackVerse.svg?style=for-the-badge
+[stars-url]: https://github.com/CommanderAstern/APA-HackVerse/stargazers
+[issues-shield]: https://img.shields.io/github/issues/CommanderAstern/APA-HackVerse.svg?style=for-the-badge
+[issues-url]: https://github.com/CommanderAstern/APA-HackVerse/issues
+[product-screenshot]: images/screenshot.png
